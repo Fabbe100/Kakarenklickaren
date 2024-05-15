@@ -1,0 +1,142 @@
+body {
+    min-height: 90vh;
+    display: flex;
+    background: url('img/background.jpg') center  /cover no-repeat;
+}
+
+.cookie-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120vh; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    right: 20px; 
+    transform: translateY(-50%);
+    padding-bottom: 20px;
+}
+
+.uppgrade {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.cookie {
+    width: 300px;
+    height: 300px;
+    background: url('img/cookie.png') left/cover no-repeat;
+    border: none;
+    transition: transform 0.2s ease; 
+}
+
+.cookie:hover {
+    transform: scale(1.1); 
+}
+
+.cookie:active {
+    transform: scale(0.9); 
+}
+
+.coockies {
+    margin-top: 20px; 
+}
+
+
+#coockiespsek {
+    position: absolute;
+    top: 5%; 
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.coursor {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #4CAF50; 
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.coursor:hover {
+    background-color: #45a049; 
+}
+
+.niklasupgrade {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #4CAF50; 
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.niklasupgrade:hover {
+    background-color: #45a049; 
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    right: 20px; 
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column; 
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+#coockiespsek {
+    position: absolute;
+    top: calc(5% + 10px); /* Adjust the top position */
+    left: 50%;
+    transform: translateX(-50%);
+}
